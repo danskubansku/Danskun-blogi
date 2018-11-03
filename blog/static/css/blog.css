@@ -7,13 +7,13 @@ body {
 }
 .page-header {
     background-color: #099DED;
-    margin-top: 0;
+    margin-top: 15px;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 56pt;
+    font-size: 80px;
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ body {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 40px;
     margin-right: 20px;
 }
 
@@ -52,4 +52,5 @@ p{font-family: 'Mali', cursive;}
 
 #pyy{height: 300px;
     padding-left: 15px;
+    border-radius: 100px;
 }
