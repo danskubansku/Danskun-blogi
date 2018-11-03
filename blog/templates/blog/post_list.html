@@ -1,31 +1,25 @@
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
     </head>
     <body>
-        <div>
+        <div class="page-header"> 
             <h1><a href="/">Danskun blogi</a></h1>
         </div>
 
     {% for post in posts %}
-        <div>
+        <div class="post">
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Ensimmäinen postaus :))</a></h2>
-            <p>Pyy on pieni kyyhkyn kokoinen metsäkanalintu. Se on noin 34–39 cm pitkä ja painaa noin 250–450 grammaa.[</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Toinen postaus :))</a></h2>
-            <p>Suomessa pyitä tapaa lähes koko maasta, lukuun ottamatta pohjoisinta Tunturi-Lappia. Runsaimmin niitä on kuitenkin Oulun eteläpuolella. </p>
         </div>
     </body>
 </html>
